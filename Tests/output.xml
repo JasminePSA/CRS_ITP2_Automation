@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20221019 14:54:40.327" rpa="false" schemaversion="3">
+<suite id="s1" name="Closepreview" source="C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Tests\closepreview.robot">
+<test id="s1-t1" name="Verify Recall" line="24">
+<kw name="Open Counter" library="ITP2Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url_qa}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221019 14:54:41.097" level="INFO">Opening browser 'chrome' to base url 'http://ustr-erl2-3644.na.uis.unisys.com:9205/?ActiveWkstUserDetails=SU4tVEhPTUFTSjE='.</msg>
+<status status="PASS" starttime="20221019 14:54:41.097" endtime="20221019 14:55:59.912"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:14.918" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20221019 14:55:59.912" endtime="20221019 14:56:14.918"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221019 14:56:14.918" endtime="20221019 14:56:15.041"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${open_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:15.041" level="INFO">Clicking button 'css=#ToggleSlider[type='checkbox']'.</msg>
+<status status="PASS" starttime="20221019 14:56:15.041" endtime="20221019 14:56:16.590"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ok_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:16.590" endtime="20221019 14:56:16.843"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${ok_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:16.844" level="INFO">Clicking button 'xpath=//button[@id='AlertButton']'.</msg>
+<status status="PASS" starttime="20221019 14:56:16.843" endtime="20221019 14:56:16.890"/>
+</kw>
+<status status="PASS" starttime="20221019 14:54:41.097" endtime="20221019 14:56:16.890"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${home_menu}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:16.891" endtime="20221019 14:56:16.911"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${home_menu}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:16.912" level="INFO">Clicking link 'xpath=//a[@id='dashboard']'.</msg>
+<status status="PASS" starttime="20221019 14:56:16.912" endtime="20221019 14:56:18.577"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_clientcertificaterequest}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:18.578" endtime="20221019 14:56:18.594"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${menu_clientcertificaterequest}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:18.594" level="INFO">Clicking link 'xpath=//a[text()='Client Certificate Request']'.</msg>
+<status status="PASS" starttime="20221019 14:56:18.594" endtime="20221019 14:56:18.640"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menu_walkinrequestentry}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:18.640" endtime="20221019 14:56:18.670"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${menu_walkinrequestentryandpayment}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:18.670" level="INFO">Clicking link 'xpath=//a[(text()='Walk-in Request Entry and Payment')]'.</msg>
+<status status="PASS" starttime="20221019 14:56:18.670" endtime="20221019 14:56:26.113"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${transaction_typedropdown}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:26.114" level="INFO">Selecting options from selection list 'xpath=//select [@id='WalkInTransactiontype']' by index 1.</msg>
+<status status="PASS" starttime="20221019 14:56:26.114" endtime="20221019 14:56:26.223"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${no_of_copies_text}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:26.224" level="INFO">Typing text '1' into text field 'xpath=//fieldset[@id='birthFormDetails']//input[@id='noOfCopies']'.</msg>
+<status status="PASS" starttime="20221019 14:56:26.224" endtime="20221019 14:56:26.363"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${childlastname_text}</arg>
+<arg>Thomas</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:26.365" level="INFO">Typing text 'Thomas' into text field 'xpath=//input[@id='txtBirthPriLastName']'.</msg>
+<status status="PASS" starttime="20221019 14:56:26.365" endtime="20221019 14:56:26.501"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${childfirstname_text}</arg>
+<arg>Shaleen</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:26.502" level="INFO">Typing text 'Shaleen' into text field 'xpath=//input[@id='txtBirthPriFirstName']'.</msg>
+<status status="PASS" starttime="20221019 14:56:26.501" endtime="20221019 14:56:26.616"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${sex_dropdown}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:26.617" level="INFO">Selecting options from selection list 'xpath=//select[@id='txtBirthSex']' by index 2.</msg>
+<status status="PASS" starttime="20221019 14:56:26.617" endtime="20221019 14:56:26.702"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${dateofbirth_month}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:26.702" level="INFO">Selecting options from selection list 'xpath=//fieldset[@id='birthFormDetails']//select[@id='birthMonth']' by index 2.</msg>
+<status status="PASS" starttime="20221019 14:56:26.702" endtime="20221019 14:56:26.785"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${dateofbirth_date}</arg>
+<arg>01</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:26.785" level="INFO">Typing text '01' into text field 'xpath=//fieldset[@id='birthFormDetails']//input[@id='birthDate']'.</msg>
+<status status="PASS" starttime="20221019 14:56:26.785" endtime="20221019 14:56:26.867"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${dateofbirth_year}</arg>
+<arg>2018</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:26.867" level="INFO">Typing text '2018' into text field 'xpath=//input[@id='birthYear']'.</msg>
+<status status="PASS" starttime="20221019 14:56:26.867" endtime="20221019 14:56:26.951"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${province}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:26.951" level="INFO">Selecting options from selection list 'xpath=//select[@id='birthProvince']' by index 2.</msg>
+<status status="PASS" starttime="20221019 14:56:26.951" endtime="20221019 14:56:27.072"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${city}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:27.073" level="INFO">Selecting options from selection list 'xpath=//select[@id='birthCity']' by index 2.</msg>
+<status status="PASS" starttime="20221019 14:56:27.072" endtime="20221019 14:56:27.160"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${mother_lastname}</arg>
+<arg>Ann</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:27.161" level="INFO">Typing text 'Ann' into text field 'xpath=//input[@id='txtBirthAuxLastName']'.</msg>
+<status status="PASS" starttime="20221019 14:56:27.160" endtime="20221019 14:56:27.250"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${mother_firstname}</arg>
+<arg>Maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:27.251" level="INFO">Typing text 'Maria' into text field 'xpath=//input[@id='txtBirthAuxFirstName']'.</msg>
+<status status="PASS" starttime="20221019 14:56:27.250" endtime="20221019 14:56:27.341"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${request_purpose}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:27.343" level="INFO">Selecting options from selection list 'xpath=//select[@id='cmbRequestPurpose']' by index 3.</msg>
+<status status="PASS" starttime="20221019 14:56:27.342" endtime="20221019 14:56:27.432"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221019 14:56:27.433" level="INFO">Executing JavaScript:
+window.scrollTo(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221019 14:56:27.433" endtime="20221019 14:56:27.438"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${save_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:27.438" endtime="20221019 14:56:27.454"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:29.465" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:27.454" endtime="20221019 14:56:29.465"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${save_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:29.467" level="INFO">Clicking button 'xpath=//fieldset[@id='birthFormDetails']//button[(text()='Save')]'.</msg>
+<status status="PASS" starttime="20221019 14:56:29.466" endtime="20221019 14:56:30.406"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${reqlastname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:30.407" endtime="20221019 14:56:30.462"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:32.477" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:30.463" endtime="20221019 14:56:32.477"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${reqlastname}</arg>
+<arg>Tom</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:32.478" level="INFO">Typing text 'Tom' into text field 'xpath=//input[@id='txtReqLastName']'.</msg>
+<status status="PASS" starttime="20221019 14:56:32.478" endtime="20221019 14:56:32.623"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${reqfirstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:32.623" endtime="20221019 14:56:32.643"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:34.652" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:32.643" endtime="20221019 14:56:34.652"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${reqfirstname}</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:34.653" level="INFO">Typing text 'John' into text field 'xpath=//input[@id='txtReqFirstName']'.</msg>
+<status status="PASS" starttime="20221019 14:56:34.652" endtime="20221019 14:56:34.738"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${reqaddress}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:34.738" endtime="20221019 14:56:34.755"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:36.770" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:34.755" endtime="20221019 14:56:36.770"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${reqaddress}</arg>
+<arg>104</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:36.772" level="INFO">Typing text '104' into text field 'xpath=//input[@id='txtAddress']'.</msg>
+<status status="PASS" starttime="20221019 14:56:36.771" endtime="20221019 14:56:36.843"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${reqcountry}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221019 14:56:36.844" endtime="20221019 14:56:36.859"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${reqcountry}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221019 14:56:36.859" level="INFO">Selecting options from selection list 'xpath=//select[@id='cmbChildCountry']' by index 2.</msg>
+<status status="PASS" starttime="20221019 14:56:36.859" endtime="20221019 14:56:36.947"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:38.953" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:36.948" endtime="20221019 14:56:38.953"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${amounttendered}</arg>
+<arg>310.00</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 14:56:38.954" level="INFO">Typing text '310.00' into text field 'xpath=//input[@id='txtAmountTendered']'.</msg>
+<status status="PASS" starttime="20221019 14:56:38.954" endtime="20221019 14:56:39.086"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:41.092" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:39.087" endtime="20221019 14:56:41.092"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${amounttendered}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221019 14:56:41.092" level="INFO">Sending key(s) ('ENTER',) to xpath=//input[@id='txtAmountTendered'] element.</msg>
+<msg timestamp="20221019 14:56:41.380" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20221019 14:56:41.380" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20221019 14:56:41.092" endtime="20221019 14:56:41.384"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:45.396" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:41.384" endtime="20221019 14:56:45.396"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>ITP2Keywords.Jsexecution</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="jsexecution" library="ITP2Keywords">
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${ele}</var>
+<arg>//*[@id="finalSubmitbtn"]</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20221019 14:56:45.410" level="INFO">${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session="c276dedbbdc84fc406084c9a3f0e55bf", element="cdb1b072-d7a5-41f3-b689-6c2af5b7a10c")&gt;</msg>
+<status status="PASS" starttime="20221019 14:56:45.397" endtime="20221019 14:56:45.410"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>5 seconds</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221019 14:56:45.410" endtime="20221019 14:56:45.412"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>arguments[0].click()</arg>
+<arg>ARGUMENTS</arg>
+<arg>${ele}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221019 14:56:45.413" level="INFO">Executing JavaScript:
+arguments[0].click()
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="c276dedbbdc84fc406084c9a3f0e55bf", element="cdb1b072-d7a5-41f3-b689-6c2af5b7a10c")&gt;'</msg>
+<msg timestamp="20221019 14:56:50.851" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-279.png"&gt;&lt;img src="selenium-screenshot-279.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221019 14:56:50.853" level="FAIL">TimeoutException: Message: script timeout
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00A01ED3+2236115]
+	Ordinal0 [0x009992F1+1807089]
+	Ordinal0 [0x008A65C0+812480]
+	Ordinal0 [0x0090647E+1205374]
+	Ordinal0 [0x008F1A8C+1120908]
+	Ordinal0 [0x009059E2+1202658]
+	Ordinal0 [0x008F18A6+1120422]
+	Ordinal0 [0x008CA73D+960317]
+	Ordinal0 [0x008CB71F+964383]
+	GetHandleVerifier [0x00CAE7E2+2743074]
+	GetHandleVerifier [0x00CA08D4+2685972]
+	GetHandleVerifier [0x00A92BAA+532202]
+	GetHandleVerifier [0x00A91990+527568]
+	Ordinal0 [0x009A080C+1837068]
+	Ordinal0 [0x009A4CD8+1854680]
+	Ordinal0 [0x009A4DC5+1854917]
+	Ordinal0 [0x009AED64+1895780]
+	BaseThreadInitThunk [0x7717FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77647BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77647B8E+238]
+</msg>
+<status status="FAIL" starttime="20221019 14:56:45.412" endtime="20221019 14:56:50.860"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221019 14:56:50.861" endtime="20221019 14:56:50.861"/>
+</kw>
+<status status="FAIL" starttime="20221019 14:56:45.397" endtime="20221019 14:56:50.863"/>
+</kw>
+<status status="FAIL" starttime="20221019 14:56:45.397" endtime="20221019 14:56:50.864"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:52.871" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:50.869" endtime="20221019 14:56:52.871"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>ITP2Keywords.movingtoorwindow</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="movingtoorwindow" library="ITP2Keywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 14:56:54.874" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 14:56:52.873" endtime="20221019 14:56:54.874"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${iterable_value}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20221019 14:56:54.882" level="INFO">${iterable_value} = ['CDwindow-710BC320C4FD4C1FCBCCD21FAC030992', 'CDwindow-4E8A90BCEBFB2945307DF301413BFE6A', 'CDwindow-6CE7624E2022A03D38F2BDA2F7F285B5']</msg>
+<status status="PASS" starttime="20221019 14:56:54.874" endtime="20221019 14:56:54.882"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${len}</var>
+<arg>${iterable_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20221019 14:56:54.882" level="INFO">Length is 3</msg>
+<msg timestamp="20221019 14:56:54.882" level="INFO">${len} = 3</msg>
+<status status="PASS" starttime="20221019 14:56:54.882" endtime="20221019 14:56:54.882"/>
+</kw>
+<if>
+<branch type="IF" condition="${len}&gt;1">
+<kw name="Log" library="BuiltIn">
+<arg>second window is present</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221019 14:56:54.883" level="INFO">second window is present</msg>
+<status status="PASS" starttime="20221019 14:56:54.882" endtime="20221019 14:56:54.883"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>CTRL+W</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221019 14:56:54.883" level="INFO">Sending key(s) ('CTRL+W',) to page.</msg>
+<msg timestamp="20221019 14:56:54.883" level="INFO">Pressing special key CONTROL down.</msg>
+<msg timestamp="20221019 14:56:54.883" level="INFO">Sending key W</msg>
+<msg timestamp="20221019 14:56:54.883" level="INFO">Releasing special key CONTROL.</msg>
+<status status="PASS" starttime="20221019 14:56:54.883" endtime="20221019 16:29:11.472"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 16:29:12.475" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221019 16:29:11.473" endtime="20221019 16:29:12.475"/>
+</kw>
+<kw name="Get Window Titles" library="SeleniumLibrary">
+<var>${windownamenew}</var>
+<doc>Returns and logs titles of all windows of the selected browser.</doc>
+<msg timestamp="20221019 16:29:12.626" level="INFO">Altogether 2 items.
+1: Civil Registry System
+2: New Tab</msg>
+<msg timestamp="20221019 16:29:12.627" level="INFO">${windownamenew} = ['Civil Registry System', 'New Tab']</msg>
+<status status="PASS" starttime="20221019 16:29:12.475" endtime="20221019 16:29:12.627"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221019 16:29:14.628" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221019 16:29:12.627" endtime="20221019 16:29:14.628"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${iterable_valuenew}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20221019 16:29:14.630" level="INFO">${iterable_valuenew} = ['CDwindow-710BC320C4FD4C1FCBCCD21FAC030992', 'CDwindow-F426C377C50EB0D05A76A37B49C092F2']</msg>
+<status status="PASS" starttime="20221019 16:29:14.628" endtime="20221019 16:29:14.630"/>
+</kw>
+<status status="PASS" starttime="20221019 14:56:54.882" endtime="20221019 16:29:14.630"/>
+</branch>
+<status status="PASS" starttime="20221019 14:56:54.882" endtime="20221019 16:29:14.630"/>
+</if>
+<status status="PASS" starttime="20221019 14:56:52.873" endtime="20221019 16:29:14.630"/>
+</kw>
+<status status="PASS" starttime="20221019 14:56:52.872" endtime="20221019 16:29:14.630"/>
+</kw>
+<kw name="RetrieveCIBtransactionfromdb" library="ITP2Keywords">
+<var>${cibirthtransaction}</var>
+<arg>${cibirthreqtype}</arg>
+<arg>${cibirthfirstname}</arg>
+<kw name="Connect To Database" library="DatabaseLibrary">
+<var>${conn}</var>
+<arg>pymssql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPassword}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20221019 16:29:14.659" level="INFO">Connecting using : pymssql.connect(database=Civil Registry System, user=PSA1User, password=PSA1User*Live, host=10.62.150.248, port=1433) </msg>
+<msg timestamp="20221019 16:29:18.160" level="INFO">${conn} = None</msg>
+<status status="PASS" starttime="20221019 16:29:14.631" endtime="20221019 16:29:18.160"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${conn}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221019 16:29:18.161" endtime="20221019 16:29:18.161"/>
+</kw>
+<kw name="Query" library="DatabaseLibrary">
+<var>@{results}</var>
+<arg>${retrievetrannoqueryQuery}</arg>
+<doc>Uses the input `selectStatement` to query for the values that will be returned as a list of tuples. Set optional
+input `sansTran` to True to run command without an explicit transaction commit or rollback.
+Set optional input `returnAsDict` to True to return values as a list of dictionaries.</doc>
+<msg timestamp="20221019 16:29:18.162" level="INFO">Executing : Query  |  select top 1 seriesno from encode.request where requesttype='CI' and prifirstname='Shaleen' order by createdon desc </msg>
+<msg timestamp="20221019 16:29:19.315" level="INFO">@{results} = [ ('0832700300008',) ]</msg>
+<status status="PASS" starttime="20221019 16:29:18.162" endtime="20221019 16:29:19.315"/>
+</kw>
+<for flavor="IN">
+<var>${seriesno}</var>
+<value>@{results}</value>
+<iter>
+<var name="${seriesno}">('0832700300008',)</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${seriesno}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221019 16:29:19.315" endtime="20221019 16:29:19.316"/>
+</kw>
+<status status="PASS" starttime="20221019 16:29:19.315" endtime="20221019 16:29:19.316"/>
+</iter>
+<status status="PASS" starttime="20221019 16:29:19.315" endtime="20221019 16:29:19.316"/>
+</for>
+<kw name="IN">
+<var>${seriesno}</var>
+<arg>@{results}</arg>
+<msg timestamp="20221019 16:29:19.324" level="FAIL">No keyword with name 'IN' found. Did you mean:
+    FakerLibrary.Ein
+    FakerLibrary.Itin
+    FakerLibrary.Init
+    FakerLibrary.Iban
+    FakerLibrary.Pyint</msg>
+<status status="FAIL" starttime="20221019 16:29:19.324" endtime="20221019 16:29:19.324"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${seriesno}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221019 16:29:19.325" endtime="20221019 16:29:19.325"/>
+</kw>
+<kw name="conca">
+<var>${tranno}</var>
+<status status="NOT RUN" starttime="20221019 16:29:19.332" endtime="20221019 16:29:19.332"/>
+</kw>
+<status status="FAIL" starttime="20221019 16:29:14.631" endtime="20221019 16:29:19.332"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221019 16:29:19.333" endtime="20221019 16:29:19.333"/>
+</kw>
+<status status="FAIL" starttime="20221019 14:54:41.097" endtime="20221019 16:29:19.334">Several failures occurred:
+
+1) TimeoutException: Message: script timeout
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00A01ED3+2236115]
+	Ordinal0 [0x009992F1+1807089]
+	Ordinal0 [0x008A65C0+812480]
+	Ordinal0 [0x0090647E+1205374]
+	Ordinal0 [0x008F1A8C+1120908]
+	Ordinal0 [0x009059E2+1202658]
+	Ordinal0 [0x008F18A6+1120422]
+	Ordinal0 [0x008CA73D+960317]
+	Ordinal0 [0x008CB71F+964383]
+	GetHandleVerifier [0x00CAE7E2+2743074]
+	GetHandleVerifier [0x00CA08D4+2685972]
+	GetHandleVerifier [0x00A92BAA+532202]
+	GetHandleVerifier [0x00A91990+527568]
+	Ordinal0 [0x009A080C+1837068]
+	Ordinal0 [0x009A4CD8+1854680]
+	Ordinal0 [0x009A4DC5+1854917]
+	Ordinal0 [0x009AED64+1895780]
+	BaseThreadInitThunk [0x7717FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77647BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77647B8E+238]
+
+
+2) No keyword with name 'IN' found. Did you mean:
+    FakerLibrary.Ein
+    FakerLibrary.Itin
+    FakerLibrary.Init
+    FakerLibrary.Iban
+    FakerLibrary.Pyint</status>
+</test>
+<status status="FAIL" starttime="20221019 14:54:40.327" endtime="20221019 16:29:19.338"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Closepreview">Closepreview</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221019 14:54:40.581" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Tests\closepreview.robot' on line 6: Importing library 'RPA.Database' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 13: Setting 'Suite Setup' is not allowed in resource file.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 15: Non-existing setting 'import java.awt.AWTException'.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 16: Non-existing setting 'import java.awt.Robot'.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 17: Non-existing setting 'import java.awt.event.KeyEvent'.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 18: Non-existing setting 'import SendKeys'.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 19: Non-existing setting 'import'.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 20: Non-existing setting 'import pyodbc'.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 67: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 86: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 400: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 416: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 436: Setting 'Documentation' is allowed only once. Only the first value is used.</msg>
+<msg timestamp="20221019 14:54:40.596" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 32: Setting variable '${cibirthfirstname} 'Shaleen'' failed: Invalid variable name '${cibirthfirstname} 'Shaleen''.</msg>
+<msg timestamp="20221019 14:54:41.082" level="ERROR">Error in file 'C:\Users\ThomasJ1\PycharmProjects\CRSITP2\Resources\ITP2Keywords.robot' on line 12: Importing library 'RPA.Database' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
+  C:\Users\ThomasJ1\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
